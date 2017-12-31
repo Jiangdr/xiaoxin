@@ -1,0 +1,51 @@
+body,html{
+  height: 100%;
+  margin:0;
+  padding: 0;
+}
+.login-div{
+	width:500px;
+	height: 600px;
+	margin: auto;
+	border: 1px solid #ccc;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+  height: 100%;
+}
+.el-container{
+		height: 100%;
+		width: 100%;
+	}
+	.el-container .el-aside{
+		background: #2F3B4C;
+	}
+	.el-main{
+		background: #CCC
+	}
+	.yzm{
+		width: 100%;
+	}
+	.yzm-div{
+		width: 290px;
+		height: 190px;
+		border: 1px solid #Ccc;
+		margin-left:105px;
+		position: absolute;
+
+
+	}
+	.huo{
+		width: 10px;
+		height: 10px;
+        border: 1px solid red;
+        float: left;
+        margin-top: 69px;
+        margin-left: 50px;
+        cursor: pointer;
+	}

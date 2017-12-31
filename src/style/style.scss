@@ -1,0 +1,547 @@
+
+body,html{
+	$baccolor :rgb(237,240,245);
+  height: 100%;
+  margin:0;
+  padding: 0;
+  a{
+  	color: #48576a;
+  	text-decoration: none;
+  }
+  #app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+  height: 100%;
+  background-color: $baccolor;
+  .vue-content{
+  	width: 100%;
+  	float: left;
+     .creatHeader{
+     	width: 100%;
+     	float: left;
+     	height: 50px;
+     	line-height: 50px;
+     	border-bottom: 1px solid #ccc;
+     	background-color: white;
+     	.el-button{
+     		float: left;
+     		margin-left: 50px;
+     		margin-top: 5px;
+     	}
+     	.startback{
+     		float: right;;
+     		margin-right: 50px;
+     		margin-top:-30px; 
+
+     	}
+     }
+     .editContent{
+     	width: 100%;
+     	float: left;
+      .creatLeft{
+   	    max-width: 300px;
+   	    min-width: 300px;
+   	    float: left;
+   	    border:1px solid #ccc;
+   	    height: 100%;
+   	    flex:1;
+   	    background-color: white;
+   	    .creatLeft-content{
+     		width: 90%;
+     		margin-left: 5%;
+     		height: 98%;
+     		margin-top: 2%;
+     	}
+     }
+       .indexLeft{
+   	    max-width: 300px;
+   	    min-width: 300px;
+   	    float: left;
+   	    border:1px solid #ccc;
+   	    height: 100%;
+   	    flex:1;
+   	    background-color: white;
+   	   
+   	    .index-content{
+     		width: 100%;
+     		margin-left: 0%;
+     		height: 100%;
+     		
+
+     	}
+
+     }
+     .creatcontent{
+     	flex:4;
+     	height: 100%;
+     	/* border:1px solid #ccc; */
+     	overflow-y:auto; 
+     
+     }
+     }
+
+  }
+
+/* 控件样式 */
+   .controlItem{
+   	width: 100%;
+   	min-height: 200px;
+   	margin-top: 10px;
+   	background-color: white;
+   	.editControl{
+   		width: 100%;
+   		min-height: 200px;
+   		padding-top: 10px;
+   		position: relative;
+   		.editheader{
+	      .el-input__inner{
+	        border:none;
+	        font-size: 20px;
+	        font-weight: bold;
+	        text-align: center;
+	       }
+	       .el-textarea__inner{
+	       	border:none;
+	       }
+	    }
+   		.deldiv{
+		    width:30px;
+		    height:40px;
+		   color: red;
+		    position:absolute;
+		    top: -10px;
+		    right: 0;
+		    z-index: 99;
+		    cursor: pointer;
+		  }
+   		.editControl-div{
+   			width: 90%;
+   			margin-left: 5%;
+   			margin-top: 10px;
+   		}
+	   	.creatinfor{
+			background:rgb(238,238,238);
+			border-color: rgb(238,238,238);
+			height:30px;
+			line-height:30px;
+			width:90%;
+			float:left;
+	        cursor:pointer;
+			margin:10px 0 10px 5%
+			}
+		.creatBtnGroup{
+				margin:10px 0 10px 0;
+				.cancleCreat{
+					
+
+				}
+		 }
+		 .el-upload{
+		 	width: 100%;
+		 }
+		 .el-upload-dragger{
+               min-width: 200;
+               margin: auto;
+               width: 100%;
+               height: auto;
+               min-height: 100px;
+               img{
+               	 width: 100%;
+                 height: auto;
+               }
+		 }
+   	}
+   	.showControl{
+	   	width: 100%;
+	   	min-height: 200px;
+	   	margin-top: 10px;
+	   	background-color: white;
+	   	cursor: move;
+	   	position: relative;
+	   	.showTitle{
+	   		width: 90%;
+	   		float: left;
+            text-align: left;
+	   		font-size: 16px;
+	   		min-height: 35px;
+	   		line-height: 35px;
+	   		padding: 0;
+	   		margin: 10px 0 0 5%;
+	   	}
+	   	.showbeizhu{
+	   		width: 86%;
+	   		float: left;
+	   		font-size: 12px;
+	   		line-height: 20px;
+	   		min-height: 20px;
+	   		  text-align: left;
+	   		margin: 0px 0 0 7%;
+	    	}
+	    	.el-radio-group{
+	    	width: 90%;
+	   		float: left;
+            text-align: left;
+	   		font-size: 14px;
+	   		padding: 0;
+	   		margin: 10px 0 0 5%;
+	   		.el-radio{
+	   			width: 100%;
+	   			height: 30px;
+	   			line-height: 30px;
+	   			margin: 0;
+	   		}
+	    	}
+	    	.el-checkbox-group{
+	    		width: 90%;
+		   		float: left;
+	            text-align: left;
+		   		font-size: 14px;
+		   		padding: 0;
+		   		margin: 10px 0 0 5%;
+		   		.el-checkbox{
+		   			width: 100%;
+		   			height: 30px;
+		   			line-height: 30px;
+		   			margin: 0;
+		   		}
+	    	}
+	    	.el-input,.el-textarea{
+	    		width: 80%;
+		   		float: left;
+		   		margin: 10px 0 0 5%;
+	    	}
+	    	.rightedit{
+				width:40px;
+				height:70px;
+				position:absolute;
+				
+				margin-right: 0px;
+				right: 0;
+				border:1px solid #ccc;
+				border-right: none;
+				z-index: 99;
+				cursor: default;
+				.item{
+					cursor: pointer;
+				}
+			}
+	   	}
+   }
+   //index页面
+   .showCardGroup{
+   	  margin:40px 50px 20px 50px !important;
+   	  .el-col{
+   	  	margin-top: 20px;
+   	  
+   	  	.editItemTitle{
+		   width: 100%;
+	   		height: 55px;
+	   		float: left;
+	   		background-color: $baccolor;
+	   		.wjTitle{
+	   			width: 100%;
+	   			height: 30px;
+	   			line-height: 30px;
+	   			float: left;
+	   			padding: 0;
+	   			margin: 0;
+	   		}
+	   		.wjTime{
+                width: 100%;
+	   			height: 20px;
+	   			line-height: 20px;
+	   			font-size: 12px;
+	   			color: #ccc;
+	   			float: left;
+	   			padding: 0;
+	   			margin: 0;
+	   		}
+	   	}
+   	  }
+   	  .cardItem{
+		   	height: 300px;
+		   
+		   	z-index: 999;
+		   	overflow: inherit;
+   	.el-card__body{
+   		padding: 0px;
+   	}
+   	.blankItem{
+   		width: 100%;
+   		float: left;
+   		height: 245px;
+   	}
+   	.editItem{
+   		width: 100%;
+   		height: 55px;
+   		float: left;
+   		background-color: rgb(229,229,229);
+   		font-size: 14px;
+   		position: relative;
+   		z-index: 4;
+   		.backstaut{
+   			float: left;
+   			width:80% ;
+   			.hadback{
+          color: #59aefe;
+          }
+          .caogao{
+          color: #ccc;
+          }
+          .huishouing{
+          color: rgb(105,231,167);
+          }
+          .zanting{
+            color: red;
+          }
+   		}
+   		.getmore{
+   			float: right;
+   			width: 20%;
+   			cursor: pointer;
+   		}
+   		.moreul{
+		    width:100%;
+		    float:left;
+		    height:100%;
+		    padding:0;
+		    margin:0;
+		    background-color: white;
+		    .moreli{
+		      height:32px;
+		      line-height:32px;
+		      list-style-type: none;
+		      text-align: left;
+		      padding-left: 20px;
+		      cursor: pointer;
+		      .morep{
+		      	 height:32px;
+			      line-height:32px;
+			      padding: 0px;
+			      margin: 0px;
+			      text-align: left;
+			      cursor: pointer;
+		      }
+
+		      .p-moreul{
+		      	position: absolute;;
+		      	margin-left: 120px;
+		      	width: 100px;
+		      	background-color: white;
+		      	border:1px solid #ccc;
+		      	padding: 0;
+		      	margin-top: -32px;
+		      	
+		      	ul{
+		      		padding: 0px;
+		      		margin: 0px;
+		      	}
+		      	.p-moreli{
+		      		 height:32px;
+				      line-height:32px;
+				      list-style-type: none;
+				      text-align: left;
+				      padding-left: 0px;
+				      cursor: pointer;
+		      	}
+		      }
+		   
+
+		    }
+  		 }
+   		
+   	
+
+         
+   	}
+   	
+   }
+
+   }
+   //统计分析
+   .ht-analysis{
+   	.el-col {
+   		margin-top: 20px;
+   		.el-card{
+   			height: 150px;
+   		}
+   		.charts-card{
+   			height: 320px;
+   		}
+   		.el-card__header{
+   		border-bottom: none;
+   		padding: 10px 0 0 10px;
+   		float: left;
+   		width: 100%;
+   		div{
+   			text-align: left;
+   			font-size: 14px;
+   		 }
+   		 .pchart{
+   		 	margin: 0px;
+   		 	float: left;
+   		 }
+   		 .pchartname{
+   		 	float: right;
+   		 	margin: 0px;
+   		 	padding: 0 10px 0 0;
+   		 }
+     	}
+     	.el-card__body{
+     		h1{
+     			margin: 40px 0 0 0;
+     		}
+     		.nowtime{
+     			font-size: 12px;
+     			color: #ccc;
+     			margin-top: 0px;
+     		}
+     	}
+   	}
+   	
+   }
+
+   //样本数据分析
+  .ht-yangben{
+  	padding:5px 20px 10px 20px;
+  	.yangben-header{
+  		width: 100%;
+  		float: left;
+  		.editheader{
+  			float: right;
+  			ul li{
+  				list-style-type: none;
+  				float: left;
+  			}
+  			.iconli{
+  				width: 35px;
+  				height: 35px;
+  				line-height: 35px;
+  				border: 1px solid #ccc;
+  				font-size:20px;
+  				margin-right: 15px; 
+  				cursor: pointer;
+  			}
+        .selectli{
+          width: 120px;
+        }
+  		}
+  		.timeSelect{
+  			width: 100%;
+  			float: left;
+        text-align: left;
+        margin-top: 30px;
+  		}
+     
+  	}
+     .tableDiv{
+          width: 100%;
+        float: left;
+        
+        margin-top: 10px;
+        .page{
+          .el-pagination__editor{
+            height: 28px;
+            line-height: 28px;
+            padding: 0 3px;
+            width: 46px !important;
+          }
+        }
+      }
+  	.wjTitle{
+  		width: 200px;
+  		float: left;
+  		height: 40px;
+  		line-height: 40px;
+  		font-size: 18px;
+  		margin: 0px;
+  		text-align: left;
+  		span{
+  			font-size: 16px;
+  		}
+
+  	}
+    //统计图表
+    
+  }
+  .ht-statical{
+    .yangbenshow{
+      width: 100%;
+      float: left;
+      border-top: 1px solid #ccc;
+      margin-top: 10px;
+
+      .yangbenItem{
+        width: 100%;
+        float: left;
+        .wenjuanTimu{
+          width: 100%;
+          float: left;
+
+          .title{
+            text-align: left;
+            margin: 0px;
+            height: 35px;
+            line-height: 35px;
+          }
+          .el-table{
+            text-align: center;
+            .cell{
+               text-align: center;
+            }
+          }
+        }
+        .wenjuanchart{
+          width: 100%;
+          float: left;
+          margin-top: 10px;
+          .el-button{
+            padding: 0px;
+            span{
+              display: block;
+              width: 80px;
+            height: 40px;
+            line-height: 40px;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+ .el-dialog__header{
+  padding:10px 0px 10px 0px;
+  text-align: left;
+  width: 92%;
+  margin-left:4%;
+  border-bottom: 1px solid #ccc;
+ }
+ .el-dialog__body{
+  padding: 0px 20px 0 20px;
+ }
+ .el-dialog__footer{
+  width: 100%;float: left;
+  .dialog-footer{
+    float: left;
+    width: 100%;
+    .el-button{
+      float: right;
+      margin-right: 50px;
+    }
+  }
+ }
+
+  .show{
+   	display: block;
+   }
+   .hide{
+   	display: none;
+   }
+
+  }
+}
+

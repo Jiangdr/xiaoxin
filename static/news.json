@@ -1,0 +1,40 @@
+{
+	"ret": 1,
+	"v": 1,
+	"data": {
+		"datas": [{
+			"id": "11",
+			"name": "87g",
+			"piclog": "http://192.168.1.171:84/public/upload/images/collaboration/site-logo.png",
+			"classname": "1510033794",
+			"linktype": "logo",
+			"state": "1",
+			"key":0
+		},{
+			"id": "11",
+			"name": "87g",
+			"piclog": "http://192.168.1.171:84/public/upload/images/collaboration/site-logo.png",
+			"classname": "1510033794",
+			"linktype": "logo",
+			"state": "0",
+			"key":1
+		}],
+		"size": 2
+	},
+	"schemakey": [
+		"id",
+		"name",
+		"piclog",
+		"classname",
+		"linktype",
+		"state"
+	],
+	"schemaname": [
+		"序号",
+		"网站名称",
+		"图片log",
+		"所属分类",
+		"链接类型",
+		"状态"
+	]
+} 

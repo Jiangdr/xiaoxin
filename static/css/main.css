@@ -1,0 +1,164 @@
+*{margin:0;padding:0;}
+html,body,#app,.wrapper{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+body{
+    font-family:"Helvetica Neue",Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+a{text-decoration: none}
+.content{
+    background: none repeat scroll 0 0 #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom:0;
+    width: auto;
+    padding:0px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.crumbs{
+    margin-bottom: 20px;
+}
+.pagination{
+    margin: 20px 0;
+    text-align: right;
+}
+.plugins-tips{
+    padding:20px 10px;
+    margin-bottom: 20px;
+}
+.el-button+.el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover{
+    background: #f6faff;
+}
+.mgb20{
+    margin-bottom: 20px;
+}
+
+.move-enter-active,.move-leave-active{
+    transition: opacity .5s;
+}
+.move-enter,.move-leave{
+    opacity: 0;
+}
+/*BaseForm*/
+.form-box{
+    width:600px;
+}
+.form-box .line{
+    text-align: center;
+}
+.el-time-panel__content::after, .el-time-panel__content::before {
+    margin-top: -7px;
+}
+/*Readme*/
+.ms-doc .el-checkbox__input.is-disabled+.el-checkbox__label{
+    color: #333;
+    cursor: pointer;
+}
+/*Upload*/
+.pure-button{
+    width:150px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+.g-core-image-corp-container .info-aside{
+    height:45px;
+}
+.el-upload--text {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.el-upload--text .el-icon-upload {
+    font-size: 67px;
+    color: #97a8be;
+    margin: 40px 0 16px;
+    line-height: 50px;
+}
+.el-upload--text {
+    color: #97a8be;
+    font-size: 14px;
+    text-align: center;
+}
+.el-upload--text em {
+    font-style: normal;
+}
+/*VueEditor*/
+.ql-container{
+    min-height: 400px;
+}
+.ql-snow .ql-tooltip{
+    transform: translateX(117.5px) translateY(10px) !important;
+}
+.editor-btn{
+    margin-top: 20px;
+}
+body,html{
+  height: 100%;
+  margin:0;
+  padding: 0;
+}
+.login-div{
+    width:500px;
+    height: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+  height: 100%;
+}
+.el-container{
+        height: 100%;
+        width: 100%;
+    }
+    .el-container .el-aside{
+        background: #2F3B4C;
+    }
+    .el-main{
+        background: #CCC
+    }
+    .yzm{
+        width: 100%;
+    }
+    .yzm-div{
+        width: 290px;
+        height: 190px;
+        border: 1px solid #Ccc;
+        margin-left:105px;
+        position: absolute;
+
+
+    }
+    .huo{
+        width: 10px;
+        height: 10px;
+        border: 1px solid red;
+        float: left;
+        margin-top: 69px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
